@@ -1,10 +1,11 @@
 node {
     // def app
-    // stage('Clone repository') {
-    //     /* Let's make sure we have the repository cloned to our workspace */
+    agent any
+    stage('Clone repository') {
+        /* Let's make sure we have the repository cloned to our workspace */
 
-    //     checkout scm
-    // }
+        checkout scm
+    }
     agent {
         label 'docker-agent'
     }
