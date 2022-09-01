@@ -6,7 +6,7 @@ node {
         checkout scm
     }
     agent {
-        label 'docker'
+        label 'docker-agent'
     }
     stage('Build image') {
         sh 'docker build --tag django-pipeline .'
