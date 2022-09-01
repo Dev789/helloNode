@@ -11,9 +11,9 @@ node {
     }
     agent {
         label 'docker-agent'
-        stage('Build image') {
+    }
+    stage('Build image') {
         sh 'ls -l'
         sh 'docker build --tag django-pipeline .'
-    }
     }
 }
