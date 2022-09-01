@@ -10,7 +10,7 @@ node {
         // sh "git checkout main"
     }
     agent {
-        label 'docker-agent'
+        label 'docker'
     }
     stage('Build image') {
         sh 'ls -l'
