@@ -10,7 +10,7 @@ node {
         // sh "git checkout main"
     }
     agent {
-        label 'docker'
+        label 'docker-agent'
     }
     stage('Build image') {
         sh 'docker build --tag node-pipeline .'
